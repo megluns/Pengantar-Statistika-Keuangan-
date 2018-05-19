@@ -1,0 +1,19 @@
+setwd("D:\\^^SMT 4\\PSK\\p.2")
+annuitas <- function (num, i, n, k)
+  switch(num, 
+         satu = {
+           v= 1/(1+i)
+            cat("Nilai v :", v,"\n")
+            an_akhir= k*(1-v^n)/i
+            cat("Nilai present value dari annuitas akhir sebesar :", an_akhir,"\n")
+            sn_akhir = k*(((1+i)^n)-1)/i
+            cat ("Nilai akumulasi dari annuitas akhir sebesar :", sn_akhir,"\n")
+         },
+         dua = {
+           v= 1/(1+i)
+           cat("Nilai v :", v,"\n")
+           an_awal = (k*(1-v^n))/(i*v)
+           cat("Nilai present value dari annuitas awal sebesar :", an_awal,"\n")
+           sn_awal = k*(((1+i)^n)-1)/(i*v)
+           cat("Nilai akumulasi dari annuitas awal sebesar:", sn_awal,"\n")}
+  )
