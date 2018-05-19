@@ -1,0 +1,19 @@
+setwd('D:\\^^SMT 4\\PSK\\p.6')
+k <- function (num, i, t, nilai, m=TRUE)
+{
+  j=i/m
+  n=m*t
+  v=1/(1+j)
+    switch(num, 
+         satu = {
+           k_an=nilai/((1-v^n)/j )
+           cat("Nilai k jika PV akhir diketahui:", k_an,"\n")
+           k_sn = nilai/((((1+j)^n)-1)/j)
+           cat ("Nilai k jika NA akhir diketahui:", k_sn,"\n")
+           k_ana = nilai/((1-v^n)/(j*v))
+           cat("Nilai k jika PV awal diketahui:", k_ana,"\n")
+           k_sna = nilai/((((1+j)^n)-1)/(j*v))
+           cat("Nilai k jika NA awal diketahui:", k_sna,"\n")
+          }
+          )
+}
