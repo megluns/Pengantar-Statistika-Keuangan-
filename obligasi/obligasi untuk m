@@ -1,0 +1,11 @@
+setwd("D:\\^^SMT 4\\PSK")
+obm <- function (f,r, i, t,m){
+  n=m*t
+  j=i/m
+  rr=r/m
+  vv= 1/(1+j)
+  an = ((1-vv^n)/j)
+  {
+    P= ((f*rr)*an)+f*vv^n}
+  cat("Nilai P =",P)
+}
