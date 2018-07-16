@@ -1,0 +1,8 @@
+setwd("D:\\^^SMT 4\\PSK")
+obligasi <- function (f,r, i, n){
+  v= 1/(1+i)
+  an = ((1-v^n)/i)
+  {
+ P= ((f*r)*an)+f*v^n}
+  cat("Nilai P =",P)
+}
